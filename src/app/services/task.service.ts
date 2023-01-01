@@ -34,6 +34,6 @@ export class TaskService {
   }
 
   postTask(task: Task): Observable<Task> {
-    return this.http.post<Task>(this.apiUrl, task);
+    return this.http.post<Task>(this.apiUrl, task, httpOptions);
   }
 }
